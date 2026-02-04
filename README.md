@@ -1,6 +1,6 @@
 # Fashion-MNIST-Image-Classification
 
-##google collab linl:https://colab.research.google.com/drive/1t_Ksz8a69JX1Q17waOmKwx-ZDj87gXf7?usp=drive_link
+##google collab link:https://colab.research.google.com/drive/1t_Ksz8a69JX1Q17waOmKwx-ZDj87gXf7?usp=drive_link
 
 #Questions:
 
