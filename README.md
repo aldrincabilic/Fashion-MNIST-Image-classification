@@ -5,18 +5,15 @@
 # Tasks Enhancement:
 
 ### 1. Change the number of neurons in the hidden layer (e.g., 64 or 256) and retrain the model.
-#### Answer: A loop is used for 3 different models, each with 64, 128 (original baseline) and 256 neurons, which are all trained for 10 epochs. A comparison of their final test accuracies is done in a bar chart after training.
-Expected result 64 neurons will result in slightly less accuracy because of less capacity. In most cases, a small edge of 256 neurons is enough to beat 128 neurons on Fashio.
+#### Answer: A loop is used for 3 different models, each with 64, 128 (original baseline) and 256 neurons, which are all trained for 10 epochs. A comparison of their final test accuracies is done in a bar chart after training.Expected result 64 neurons will result in slightly less accuracy because of less capacity. In most cases, a small edge of 256 neurons is enough to beat 128 neurons on Fashio.
+
 
 ### 2. Increase the number of epochs and observe changes in accuracy.
-#### Answer: Four models are trained with the original 128-neuron architecture, with 5, 10, 20, and 30 epochs. There are 2 plots generated:Training accuracy as function of epochs for each config, Validation accuracy per epochs for each config
-
+#### Answer: Four models are trained with the original 128-neuron architecture, with 5, 10, 20, and 30 epochs. There are 2 plots generated:Training accuracy as function of epochs for each config, Validation accuracy per epochs for each config. 
 Desired outcome: improvement in accuracy will be observed at 20 epochs compared to 10 epochs then compared to 5 epochs. The training accuracy continues to rise, while validation accuracy has leveled off or fallen slightly, which is indicative of overfitting.The training accuracy is still increasing while the validation accuracy is either stagnating or slightly decreasing, a typical sign of overfitting.
 
 ### 3. Add another hidden layer and compare the results.
-#### Answer: 
-
-
+#### Answer: They are trained for 10 epochs. A validation accuracy curve and a final bar chart are used to compare the results.The expected result: The more complex the pattern, the better the deeper the model. But on Fashion-MNIST, the gains of increasing the number of layers are small and risking overfitting takes place if there is no regularization (Dropout, BatchNorm, etc.).
 
 #Questions:
 
